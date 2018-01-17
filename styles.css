@@ -1,0 +1,131 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(white, #ffcc00);
+  font-family: "Univers", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Univers", sans-serif;
+  padding-left: 20px;
+  width: 200px;
+}
+
+nav {
+  padding-left: 70px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: -10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+a:hover {
+  color: white
+}
+
+ul {
+  font-size: 22px;
+}
+
+ol {
+  font-size: 22px;
+}
+
+footer {
+  padding-right: 50px;
+  padding-top: 5px;
+}
+
+.maker {
+  display: inline-block;
+  width: 400px;
+  background-color: #bfbfbf;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  padding-top: 10px;
+}
+
+#header h1 {
+  float: left;
+  width: 200px;
+  height: 300px;
+}
+
+#header div {
+  position: relative;
+  top: 10px;
+  left: 130px;
+}
+
+#sections {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  background: #737373;
+}
+
+#col1 {
+  float: left;
+  padding-left: 50px;
+}
+
+#col1:hover {
+  background-color: #ff00ff;
+  color: white;
+  padding-left: 50px;
+}
+
+#col2 {
+  float: right;
+  padding-right: 50px;
+}
+
+#col2:hover {
+  background-color: #0099ff;
+  color: white;
+  padding-right: 50px;
+}
+
+#validhtml {
+  display: inline;
+  padding-right: 100px;
+}
+
+#validcss {
+  display: inline;
+  padding-right: 100px;
+}
+
+#mySketch {
+  margin-bottom: 20px;
+}
