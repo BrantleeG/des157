@@ -1,9 +1,11 @@
 console.log("isthisworking");
 
-var value = 0;
+var valueR = 0;
+var valueG = 0;
+var valueB = 0;
 var x = 0;
 var y = 0;
-var sizing = 120;
+var sizing = 100;
 
 function setup() {
   var myCanvas = createCanvas(800,250,WEBGL);
@@ -13,38 +15,51 @@ function setup() {
 function draw() {
   background(0);
   translate(10,10,0);
-  fill(255);
-  rotateX(x);
-  x = x + .01;
-  if (x > 100) {
-    x = 0;
-  }
-  rotateY(y);
-  y = y + .01;
-  if (y > 100) {
-    y = 0;
-  }
-  box(100);
+  fill(valueR,valueG,valueB);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  torus(sizing,50);
+  // rotateX(x);
+  // x = x + .01;
+  // if (x > 100) {
+  //   x = 0;
+  // }
+  // rotateY(y);
+  // y = y + .01;
+  // if (y > 100) {
+  //   y = 0;
+  // }
+  // box(100);
 }
 
-// function mouseIsMoved() {
-//   value = value + 1;
-//   if (value > 255) {
-//     value = -value;
-//   }
-// }
+function mouseMoved() {
+  valueR = valueR + 1;
+  if (valueR >= 255) {
+    valueR = 0;
+  }
 
-// function mouseIsPressed() {
-//   if (sizing == 120) {
-//     sizing = 100;
-//   }
-//   else {
-//     sizing = 120
-//   }
-// }
+  valueG = valueG + 0.5;
+  if (valueG >= 255) {
+    valueG = 0;
+  }
 
-// function mouseIsReleased() {
-//   if (sizing <= 120) {
-//     sizing = 120;
-//   }
-// }
+  valueB = valueB + 0.25;
+  if (valueB >= 255) {
+    valueB = 0;
+  }
+}
+
+function mousePressed() {
+  if (sizing == 100) {
+    sizing = 80;
+  }
+  else {
+    sizing = 100
+  }
+}
+
+function mouseReleased() {
+  if (sizing <= 80) {
+    sizing = 100;
+  }
+}
