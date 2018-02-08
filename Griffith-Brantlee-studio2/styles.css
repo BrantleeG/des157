@@ -34,6 +34,10 @@ h1 {
 /*formatting text*/
 p {
   display: block;
+  color: #E7E7E7;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 2;
 }
 
 footer {
@@ -84,21 +88,26 @@ a:hover {
   display: none;
 }
 
+div {}
+
 /*Close or cancel button*/
 .exit {
   position: relative;
   margin-left: 95%;
-  top: -250px;
+  top: -300px;
+  color: #00FF00;
 }
 
 .exit1 {
   position: relative;
   margin-left: 95%;
-  top: -250px;
+  top: -300px;
+  color: #00FF00;
 }
 
 .exit2 {
   position: relative;
   margin-left: 95%;
-  top: -250px;
+  top: -300px;
+  color: #00FF00;
 }

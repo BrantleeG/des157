@@ -2,7 +2,7 @@
 
 console.log("reading info");
 
-document.addEventListener("DOMContentLoaded"), function(event) {
+// document.addEventListener("DOMContentLoaded"), function(event) {}
 
 /*Creating interactive elements*/
   console.log("it works!");
@@ -65,5 +65,3 @@ document.addEventListener("DOMContentLoaded"), function(event) {
   exit2.addEventListener('click', function() {
     earphonesTXT.style.display="none";
   })
-
-}
