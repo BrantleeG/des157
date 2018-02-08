@@ -40,6 +40,7 @@ footer {
   width: 100%;
   text-align: center;
   margin-bottom: 5%;
+  margin-top: 50px;
 }
 
 a {
@@ -57,7 +58,7 @@ a:hover {
 
 .item {
   display: inline-block;
-  margin-bottom: 15%
+  margin-bottom: 25%
 }
 
 /*Position and scale of images*/
