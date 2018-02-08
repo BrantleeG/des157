@@ -1,9 +1,11 @@
 'use strict';
 
+console.log("reading info");
+
 document.addEventListener("DOMContentLoaded"), function(event) {
 
 /*Creating interactive elements*/
-  console.log("it-works");
+  console.log("it works!");
   var laptop = document.getElementById("laptop");
   var jordan = document.getElementById("jordan");
   var earphones = document.getElementById("earphones");
