@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded"), function(event) {
 
+/*Creating interactive elements*/
   console.log("it-works");
   var laptop = document.getElementById("laptop");
   var jordan = document.getElementById("jordan");
@@ -11,14 +12,17 @@ document.addEventListener("DOMContentLoaded"), function(event) {
   var earphonesTXT = document.getElementById("earphonesTXT");
   var close = document.getElementById("close");
 
+/*Increase size of image when moving mouse over*/
   laptop.addEventListener('mouseover', function() {
     laptop.style.webkitTransform = 'scale(1.2,1.2)';
   })
 
+/*return image to normal size when mouse moves off*/
   laptop.addEventListener('mouseout', function() {
     laptop.style.webkitTransform = 'scale(1,1)';
   })
 
+/*have text box appear when images are clicked*/
   laptop.addEventListener('click', function() {
     laptopTXT.style.display="block";
   })
@@ -47,6 +51,7 @@ document.addEventListener("DOMContentLoaded"), function(event) {
     earphonesTXT.style.display="block";
   })
 
+/*close text box when the 'X' is clicked*/
   exit.addEventListener('click', function() {
     laptopTXT.style.display="none";
   })

@@ -15,6 +15,7 @@ header{
   overflow: auto;
 }
 
+/*Positions image and text sections*/
 section {
   position: relative;
   margin-top: 15%;
@@ -22,15 +23,9 @@ section {
   margin-right: 10%;
 }
 
-.item {
-  display: inline-block;
-  margin-bottom: 15%
-}
-
-#laptop, #jordan, #earphones {
-  top: 20%;
-  margin: 3%;
-  transform: scale(1,1);
+/*formatting text*/
+p {
+  display: block;
 }
 
 footer {
@@ -49,6 +44,19 @@ a:hover {
   background-color: white;
 }
 
+.item {
+  display: inline-block;
+  margin-bottom: 15%
+}
+
+/*Position and scale of images*/
+#laptop, #jordan, #earphones {
+  top: 20%;
+  margin: 3%;
+  transform: scale(1,1);
+}
+
+/*Position of text*/
 #laptopTXT, #jordanTXT, #earphonesTXT {
   max-width: 70%;
   max-height: 450px;
@@ -64,10 +72,7 @@ a:hover {
   display: none;
 }
 
-p {
-  display: block;
-}
-
+/*Close or cancel button*/
 .exit {
   position: relative;
   margin-left: 95%;
