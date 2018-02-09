@@ -27,6 +27,8 @@ console.log("reading info");
 /*have text box appear when images are clicked*/
   laptop.addEventListener('click', function() {
     laptopTXT.style.display="block";
+    jordanTXT.style.display="none";
+    earphonesTXT.style.display="none";
   })
 
   jordan.addEventListener('mouseover', function() {
@@ -39,6 +41,8 @@ console.log("reading info");
 
   jordan.addEventListener('click', function() {
     jordanTXT.style.display="block";
+    laptopTXT.style.display="none";
+    earphonesTXT.style.display="none";
   })
 
   earphones.addEventListener('mouseover', function() {
@@ -51,6 +55,8 @@ console.log("reading info");
 
   earphones.addEventListener('click', function() {
     earphonesTXT.style.display="block";
+    laptopTXT.style.display="none";
+    jordanTXT.style.dispaly="none";
   })
 
 /*close text box when the 'X' is clicked*/
