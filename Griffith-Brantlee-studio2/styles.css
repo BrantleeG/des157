@@ -86,26 +86,27 @@ a:hover {
   display: none;
 }
 
-div {}
-
 /*Close or cancel button*/
 .exit {
   position: relative;
-  margin-left: 95%;
-  top: -300px;
+  margin-left: 99%;
+  top: -125px;
   color: #00FF00;
+  font-family: sans-serif;
 }
 
 .exit1 {
   position: relative;
-  margin-left: 95%;
-  top: -300px;
+  margin-left: 99%;
+  top: -125px;
   color: #00FF00;
+  font-family: sans-serif;
 }
 
 .exit2 {
   position: relative;
-  margin-left: 95%;
-  top: -300px;
+  margin-left: 99%;
+  top: -125px;
   color: #00FF00;
+  font-family: sans-serif;
 }
