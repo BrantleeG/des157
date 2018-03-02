@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#banner {
+  display: block;
+  margin: auto;
+}
+
+#selector {
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  padding: 20px;
+}
+
+#submit {
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+#meaning {
+  width: 300px;
+}
+
+#action {
+  margin-left: 50px;
+}
+
+#meaningtitle {
+  margin-left: 50px;
+}
+
+.flag {
+  display: inline-block;
+  margin: auto;
+  padding: 50px;
+}
+
+.list {
+  list-style-type: none;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+}
+
+.action {
+  display: inline-block;
+  margin: auto;
+  padding: 50px;
+}
+
+.nav {
+  padding: 20px;
+  float: right;
+}
+
+.ender {
+  display: inline-block;
+  margin: 50px;
+}
