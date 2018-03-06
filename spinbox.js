@@ -8,7 +8,7 @@ var y = 0;
 var sizing = 100;
 
 function setup() {
-  var myCanvas = createCanvas(800,250,WEBGL);
+  var myCanvas = createCanvas(800,200,WEBGL);
   myCanvas.parent('mySketch');
 }
 

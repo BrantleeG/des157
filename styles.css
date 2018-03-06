@@ -29,7 +29,7 @@ h2 {
 
 a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
 }
 
@@ -38,11 +38,11 @@ a:hover {
 }
 
 ul {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 ol {
-  font-size: 22px;
+  font-size: 18px;
 }
 
 footer {
