@@ -4,9 +4,16 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: #66b3ff;
+  overflow: auto;
+  font-family: sans-serif;
+}
+
 #banner {
   display: block;
   margin: auto;
+  padding: 15px;
 }
 
 #selector {
@@ -16,12 +23,25 @@ html, body {
 #description {
   text-align: center;
   padding: 20px;
+  background-color: #ffffff;
+  font-size: 20px;
+  margin: auto;
+  width: 800px;
 }
 
 #submit {
   display: block;
+  margin: auto;
   text-align: center;
-  margin: 20px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #00b300;
+  color: #ffffff;
+}
+
+#submit:hover {
+  background-color: #e60000;
+  transition: .2s ease;
 }
 
 #meaning {
@@ -40,6 +60,10 @@ html, body {
   display: inline-block;
   margin: auto;
   padding: 50px;
+}
+
+.flag:hover {
+
 }
 
 .list {
@@ -64,4 +88,68 @@ html, body {
 .ender {
   display: inline-block;
   margin: 50px;
+}
+
+.countbut {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.countbut:hover {
+  color: #ffffff;
+  background-color: #0080ff;
+  transition: .2s ease;
+}
+
+.navbut {
+  padding: 15px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.navbut:hover {
+  background-color: #666666;
+  color: white;
+  transition: .2s ease;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
