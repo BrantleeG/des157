@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -59,6 +63,7 @@ p {
   font-size: 16px;
   background-color: #00b300;
   color: #ffffff;
+  border-radius: 10px;
 }
 
 #submit:hover {
@@ -75,7 +80,7 @@ p {
 }
 
 #meaningtitle {
-  margin-left: 50px;
+  padding-right: 500px;
 }
 
 #rig {
@@ -102,13 +107,13 @@ p {
 
 #countryimg {
   margin: auto;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
 #actionimg {
   margin: auto;
-  display: inline-block;
+  display: block;
   text-align: center;
 }
 
@@ -142,11 +147,11 @@ p {
   bottom: 0;
   right: 0;
   left: 0;
+  text-align: center;
 }
 
 .ender {
-  display: inline-block;
-  margin: 50px;
+  margin: 30px;
 }
 
 .countbut {
@@ -250,6 +255,29 @@ p {
   float: left;
   background: lightgray;
   margin: 15px;
+}
+
+.noline {
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #rig li: hover .rig-overlay {
