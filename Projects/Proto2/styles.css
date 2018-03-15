@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: #66b3ff;
+  background-color: #001a4d;
   overflow: auto;
   font-family: sans-serif;
 }
@@ -19,6 +19,18 @@ footer {
   text-align: center;
 }
 
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
 #banner {
   display: block;
   margin: auto;
@@ -27,15 +39,16 @@ footer {
 
 #selector {
   text-align: center;
+  color: white;
 }
 
 #description {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff;
   font-size: 20px;
   margin: auto;
-  width: 800px;
+  width: 1000px;
+  color: white;
 }
 
 #submit {
@@ -85,6 +98,18 @@ footer {
 
 #mainblock {
   padding-bottom: 50px;
+}
+
+#countryimg {
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+
+#actionimg {
+  margin: auto;
+  display: inline-block;
+  text-align: center;
 }
 
 .flag {
