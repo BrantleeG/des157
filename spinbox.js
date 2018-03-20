@@ -5,20 +5,20 @@ var valueG = 0;
 var valueB = 0;
 var x = 0;
 var y = 0;
-var sizing = 100;
+var sizing = 70;
 
 function setup() {
-  var myCanvas = createCanvas(800,200,WEBGL);
+  var myCanvas = createCanvas(800,150,WEBGL);
   myCanvas.parent('mySketch');
 }
 
 function draw() {
   background(0);
-  translate(10,10,0);
+  translate(5,10,0);
   fill(valueR,valueG,valueB);
   rotateX(frameCount * 0.01);
   rotateY(frameCount * 0.01);
-  torus(sizing,50);
+  torus(sizing,40);
   // rotateX(x);
   // x = x + .01;
   // if (x > 100) {
