@@ -38,12 +38,13 @@ p {
 #banner {
   display: block;
   margin: auto;
+  width: 80%;
   padding: 15px;
 }
 
 #selector {
   text-align: center;
-  color: white;
+  color: gold;
 }
 
 #description {
@@ -51,7 +52,7 @@ p {
   padding: 20px;
   font-size: 20px;
   margin: auto;
-  width: 1000px;
+  width: 90%;
   color: white;
 }
 
@@ -60,6 +61,7 @@ p {
   margin: auto;
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
   font-size: 16px;
   background-color: #00b300;
   color: #ffffff;
@@ -76,7 +78,7 @@ p {
 }
 
 #action {
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 
 #meaningtitle {
@@ -84,7 +86,7 @@ p {
 }
 
 #rig {
-  max-width: 900px;
+  max-width: 50%;
   margin: 0 auto;
   padding: 0;
   font-size: 0;
@@ -117,14 +119,16 @@ p {
   text-align: center;
 }
 
+#meaningimg {
+  width: 100%;
+}
+
 .flag {
   display: inline-block;
   margin: auto;
   padding: 50px;
-}
-
-.flag:hover {
-
+  padding-bottom: 20px;
+  padding-top: 40px;
 }
 
 .list {
@@ -138,7 +142,10 @@ p {
 .action {
   display: inline-block;
   margin: auto;
-  padding: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 .nav {
@@ -219,7 +226,7 @@ p {
   margin: auto;
   background: #004d99 url(img/link.png) no-repeat center 20%;
   background-size: 50px 50px;
-  opacity: 0;
+  opacity: 0.5;
   transition: all 0.6s;
 }
 
@@ -232,14 +239,14 @@ p {
   width: 100%;
   text-align: center;
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   font-family: Verdana, sans-serif;
   font-weight: bold;
   top: 45%;
   color: white;
-  opacity: 0;
-  transform: translateY(-20px);
+  opacity: 0.9;
+  transform: translateY(-10px);
   transition: all .3s;
 }
 
@@ -285,7 +292,7 @@ p {
 }
 
 #rig li:hover .rig-overlay {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #rig li:hover .rig-text {
@@ -295,18 +302,42 @@ p {
 
 @media (max-width: 9000px) {
   #rig li {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (max-width: 700px) {
   #rig li {
-    width: 50%;
+    width: 100%;
   }
 }
 
 @media (max-width: 550px) {
   #rig li {
-    width: 50%;
+    width: 100%;
   }
+}
+
+#table{
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table li {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+input {
+    margin-right: 10px;
+    vertical-align: middle;
+    position: relative;
 }
