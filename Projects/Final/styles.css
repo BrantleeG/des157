@@ -140,7 +140,27 @@ p {
   color: white;
 }
 
-.instructlist {
+#instructlist1 {
+  color: white;
+  padding: 5px;
+}
+
+#instructlist2 {
+  color: white;
+  padding: 5px;
+}
+
+#instructlist3 {
+  color: white;
+  padding: 5px;
+}
+
+#instructlist4 {
+  color: white;
+  padding: 5px;
+}
+
+#instructlist5 {
   color: white;
   padding: 5px;
 }
