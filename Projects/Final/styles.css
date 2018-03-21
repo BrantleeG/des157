@@ -50,6 +50,7 @@ p {
 #description {
   text-align: center;
   padding: 20px;
+  padding-bottom: 10px;
   font-size: 20px;
   margin: auto;
   width: 90%;
@@ -121,6 +122,26 @@ p {
 
 #meaningimg {
   width: 100%;
+}
+
+#instructions {
+  color: gold;
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+#instructorder {
+  list-style-position: inside;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
+#instructlist {
+  color: white;
+  padding: 5px;
 }
 
 .flag {
@@ -340,4 +361,62 @@ input {
     margin-right: 10px;
     vertical-align: middle;
     position: relative;
+}
+
+.thumbsup {
+  height: 200px;
+  width: 200px;
+  background: url("thumbsup.png");
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.thumbsup:hover {
+  cursor: pointer;
+  background: url("thumbsup.gif");
+}
+
+.ok {
+  height: 200px;
+  width: 200px;
+  background: url("ok.png");
+  background-color: white;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.ok:hover {
+  cursor: pointer;
+  background: url("ok.gif");
+  background-color: white;
+}
+
+.handarm {
+  height: 200px;
+  width: 200px;
+  background: url("handarm.png");
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.handarm:hover {
+  cursor: pointer;
+  background: url("handarm.gif");
+}
+
+.eye {
+  height: 200px;
+  width: 200px;
+  background: url("eye.png");
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.eye:hover {
+  cursor: pointer;
+  background: url("eye.gif");
 }
