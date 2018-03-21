@@ -541,3 +541,11 @@ input {
   cursor: pointer;
   background: url("eye.gif");
 }
+
+#actiontitle {
+  text-align: center;
+}
+
+#desc_action {
+  text-align: center;
+}
