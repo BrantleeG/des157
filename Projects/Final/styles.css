@@ -329,7 +329,7 @@ p {
   clear: both;
 }
 
-#rig li: hover .rig-overlay {
+#rig li:hover .rig-overlay {
   transform: scale(1.05);
 }
 

@@ -9,7 +9,6 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-
 </head>
 <body>
   <a href="index.html">
@@ -79,7 +78,6 @@
       <ul id="table">
         <li>
           <div class="thumbsup" id="thumbsupimg"></div>
-          <!-- <img class="action" src="action.png" alt="action1"> -->
           <div>
             <input type="radio" name="actionselect" value="thumbsup" label = "Thumbs Up" id="formfill thumbsup" checked/>
             <label for="formfill">Thumbs Up</label>
@@ -89,7 +87,6 @@
       <ul id="table">
         <li>
           <div class="ok" id="okimg"></div>
-          <!-- <img class="action" src="action.png" alt="action2"> -->
           <div>
             <input type="radio" name="actionselect" value="ok" label = "OK Symbol" id="formfill ok"/>
             <label for="formfill">OK Symbol</label>
@@ -99,7 +96,6 @@
       <ul id="table">
         <li>
           <div class="handarm" id="handarmimg"></div>
-          <!-- <img class="action" src="action.png" alt="action3"> -->
           <div>
             <input type="radio" name="actionselect" value="handarm" label = "Hand/Arm Movement" id="formfill handarm"/>
             <label for="formfill">Hand/Arm Movement</label>
@@ -109,7 +105,6 @@
       <ul id="table">
         <li>
           <div class="eye" id="eyeimg"></div>
-          <!-- <img class="action" src="action.png" alt="action4"> -->
           <div>
             <input type="radio" name="actionselect" value="eye" label = "Eye Contact" id="formfill eye"/>
             <label for="formfill">Eye Contact</label>
@@ -129,8 +124,6 @@
     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
   </footer>
   <script src="script.js"></script>
-
-
   <script>
       $(document).ready(function(){
           $("#myForm").submit(function(e){
@@ -143,16 +136,9 @@
                 var label = $("[value= '" + myFormSerialize[i]['value'] + "']").attr("label");
                 sessionStorage.setItem("title" + i, label);
               }
-
              window.location = "meaning.html"
           })
-
-
       })
-
-
-
   </script>
-
 </body>
 </html>
