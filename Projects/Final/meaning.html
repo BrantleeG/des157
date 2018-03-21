@@ -89,8 +89,8 @@
         var text = $("." + flag + "." + action).text();
         $("#meaniningText").html(text);
         $("#img_action").html("<div class='" + action + "'></div>");
-        $("#country_selected").html(flag);
-        $("#desc_action").html(action);
+        $("#country_selected").html(sessionStorage.getItem("title0"));
+        $("#desc_action").html(sessionStorage.getItem("title1"));
       })
 
   </script>
