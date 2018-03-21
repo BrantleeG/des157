@@ -5,19 +5,24 @@
   <link rel="stylesheet" href="styles.css">
   <title>Universal Communicator</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 </head>
 <body>
   <a href="index.html">
     <img id="banner" src="banner1.png" alt="banner">
   </a>
-  <form action="meaning.html">
+  <form id = "myForm" >
     <h1 id="selector">Select a country:</h1>
     <div id="countryimg">
     <ul id="table">
       <li>
         <img class="flag" src="usflag.png" alt="flag1" id="usaflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill usa" checked/>
+          <input type="radio" name="countryselect" value="usa" id="formfill usa" checked/>
           <label for="formfill">United States</label>
         </div>
       </li>
@@ -26,7 +31,7 @@
       <li>
         <img class="flag" src="germanyflag.png" alt="flag2" id="germanyflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill germany"/>
+          <input type="radio" name="countryselect" value="germany" id="formfill germany"/>
           <label for="formfill">Germany</label>
         </div>
       </li>
@@ -35,7 +40,7 @@
       <li>
         <img class="flag" src="franceflag.png" alt="flag3" id="franceflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill france"/>
+          <input type="radio" name="countryselect" value="france" id="formfill france"/>
           <label for="formfill">France</label>
         </div>
       </li>
@@ -44,7 +49,7 @@
       <li>
         <img class="flag" src="spainflag.png" alt="flag4" id="spainflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill spain"/>
+          <input type="radio" name="countryselect" value="spain" id="formfill spain"/>
           <label for="formfill">Spain</label>
         </div>
       </li>
@@ -53,7 +58,7 @@
       <li>
         <img class="flag" src="japanflag.png" alt="flag5" id="japanflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill japan"/>
+          <input type="radio" name="countryselect" value="japan" id="formfill japan"/>
           <label for="formfill">Japan</label>
         </div>
       </li>
@@ -62,7 +67,7 @@
       <li>
         <img class="flag" src="brazilflag.png" alt="flag6" id="brazilflag">
         <div>
-          <input type="radio" name="countryselect" value="0" id="formfill brazil"/>
+          <input type="radio" name="countryselect" value="brazil" id="formfill brazil"/>
           <label for="formfill">Brazil</label>
         </div>
       </li>
@@ -76,7 +81,7 @@
           <div class="thumbsup" id="thumbsupimg"></div>
           <!-- <img class="action" src="action.png" alt="action1"> -->
           <div>
-            <input type="radio" name="actionselect" value="0" id="formfill thumbsup" checked/>
+            <input type="radio" name="actionselect" value="thumbsup" id="formfill thumbsup" checked/>
             <label for="formfill">Thumbs Up</label>
           </div>
         </li>
@@ -86,7 +91,7 @@
           <div class="ok" id="okimg"></div>
           <!-- <img class="action" src="action.png" alt="action2"> -->
           <div>
-            <input type="radio" name="actionselect" value="0" id="formfill ok"/>
+            <input type="radio" name="actionselect" value="ok" id="formfill ok"/>
             <label for="formfill">OK Symbol</label>
           </div>
         </li>
@@ -96,7 +101,7 @@
           <div class="handarm" id="handarmimg"></div>
           <!-- <img class="action" src="action.png" alt="action3"> -->
           <div>
-            <input type="radio" name="actionselect" value="0" id="formfill handarm"/>
+            <input type="radio" name="actionselect" value="handarm" id="formfill handarm"/>
             <label for="formfill">Hand/Arm Movement</label>
           </div>
         </li>
@@ -106,7 +111,7 @@
           <div class="eye" id="eyeimg"></div>
           <!-- <img class="action" src="action.png" alt="action4"> -->
           <div>
-            <input type="radio" name="actionselect" value="0" id="formfill eye"/>
+            <input type="radio" name="actionselect" value="eye" id="formfill eye"/>
             <label for="formfill">Eye Contact</label>
           </div>
         </li>
@@ -124,5 +129,26 @@
     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
   </footer>
   <script src="script.js"></script>
+
+
+  <script>
+      $(document).ready(function(){
+          $("#myForm").submit(function(e){
+              e.preventDefault();
+              sessionStorage.clear();
+              var myFormSerialize = $(this).serializeArray();
+              for (var i = 0; i < myFormSerialize.length; i++ ){
+                sessionStorage.setItem(myFormSerialize[i]['name'], myFormSerialize[i]['value']);
+              }
+              window.location = "meaning.html"
+          })
+
+
+      })
+
+
+
+  </script>
+
 </body>
 </html>

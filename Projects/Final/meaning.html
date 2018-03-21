@@ -5,6 +5,10 @@
   <link rel="stylesheet" href="styles.css">
   <title>Universal Communicator</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 </head>
 <body>
   <a href="index.html">
@@ -14,55 +18,56 @@
   <div class="column left">
     <div id="action">
       <h1>Action</h1>
-      <img id="meaningimg" src="action.png" alt="action">
-      <div class="thumbsup" style="display: none;"></div>
+      <div id = "img_action"></div>
+      <!-- <img id="meaningimg" src="action.png" alt="action"> -->
+      <!-- <div class="thumbsup" style="display: none;"></div>
       <div class="ok" style="display: none;"></div>
       <div class="handarm" style="display: none;"></div>
-      <div class="eye" style="display: none;"></div>
-      <p>Description of action</p>
+      <div class="eye" style="display: none;"></div> -->
+      <p id = "desc_action"></p>
     </div>
   </div>
   <div class="column right">
     <h1 id="meaningtitle">What it means:</h1>
     <div class="ender">
-      <h2 id="meaningcountry">In (country selected)</h2>
+      <h2 id="meaningcountry">In <span id = "country_selected">(country selected)</span></h2>
       <h2 id="meaningcountry usa" style="display: none;">In the United States</h2>
       <h2 id="meaningcountry germany" style="display: none;">In Germany</h2>
       <h2 id="meaningcountry france" style="display: none;">In France</h2>
       <h2 id="meaningcountry spain" style="display: none;">In Spain</h2>
       <h2 id="meaningcountry japan" style="display: none;">In Japan</h2>
       <h2 id="meaningcountry brazil" style="display: none;">In Brazil</h2>
-      <p id="meaning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p class="meaning" id = "meaniningText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       <!-- USA gesture meaning -->
-      <p id="meaning usa thumbsup" style="display: none">A thumbs up is used to denote something as "good" or "acceptable". It is typically seen as a sign of approval.</p>
-      <p id="meaning usa ok" style="display: none">The symbol actually means something is "OK", and it is used to say everything is alright or understood.</p>
-      <p id="meaning usa handarm" style="display: none">In this country it is very common to use hands and arm movements in conversation. It is something that is done quite often, but not to the point of extreme exaggeration.</p>
-      <p id="meaning usa eye" style="display: none">It is good to have eye contact with others, as it shows engagement in conversation and self-confidence. There is less eye contact with strangers in public places.</p>
+      <p class="meaning usa thumbsup" style="display: none">A thumbs up is used to denote something as "good" or "acceptable". It is typically seen as a sign of approval.</p>
+      <p class="meaning usa ok" style="display: none">The symbol actually means something is "OK", and it is used to say everything is alright or understood.</p>
+      <p class="meaning usa handarm" style="display: none">In this country it is very common to use hands and arm movements in conversation. It is something that is done quite often, but not to the point of extreme exaggeration.</p>
+      <p class="meaning usa eye" style="display: none">It is good to have eye contact with others, as it shows engagement in conversation and self-confidence. There is less eye contact with strangers in public places.</p>
       <!-- Germany gesture meaning -->
-      <p id="meaning germany thumbsup" style="display: none">Thumbs up is used to represent the number "1". It is also recognized as a sign of appreciation and agreement, but it is not used in this context as often.</p>
-      <p id="meaning germany ok" style="display: none">The "OK" symbol is considered a rude and obscene gesture and should not be used.</p>
-      <p id="meaning germany handarm" style="display: none">People here tend not to use their arms in conversation so much, as they don't like to over-exaggerate. Too much motion may come off as insincere.</p>
-      <p id="meaning germany eye" style="display: none">It is generally seen as polite to maintain eye contact with others during conversation.</p>
+      <p class="meaning germany thumbsup" style="display: none">Thumbs up is used to represent the number "1". It is also recognized as a sign of appreciation and agreement, but it is not used in this context as often.</p>
+      <p class="meaning germany ok" style="display: none">The "OK" symbol is considered a rude and obscene gesture and should not be used.</p>
+      <p class="meaning germany handarm" style="display: none">People here tend not to use their arms in conversation so much, as they don't like to over-exaggerate. Too much motion may come off as insincere.</p>
+      <p class="meaning germany eye" style="display: none">It is generally seen as polite to maintain eye contact with others during conversation.</p>
       <!-- France gesture meaning -->
-      <p id="meaning france thumbsup" style="display: none">Putting your thumb up is used in counting to represent the number "1". It can also mean "OK".</p>
-      <p id="meaning france ok" style="display: none">Creating a ring with your thumb and index finger is typically used to represent the number "zero".</p>
-      <p id="meaning france handarm" style="display: none">People here are typically very controlled with their bodies, and their arms are stiff and tense. While hand and arm gestures are used, they are kept subtle.</p>
-      <p id="meaning france eye" style="display: none">While maintaining eye contact during conversation is good, long eye contact may infer interest in an individual.</p>
+      <p class="meaning france thumbsup" style="display: none">Putting your thumb up is used in counting to represent the number "1". It can also mean "OK".</p>
+      <p class="meaning france ok" style="display: none">Creating a ring with your thumb and index finger is typically used to represent the number "zero".</p>
+      <p class="meaning france handarm" style="display: none">People here are typically very controlled with their bodies, and their arms are stiff and tense. While hand and arm gestures are used, they are kept subtle.</p>
+      <p class="meaning france eye" style="display: none">While maintaining eye contact during conversation is good, long eye contact may infer interest in an individual.</p>
       <!-- Spain gesture meaning -->
-      <p id="meaning spain thumbsup" style="display: none">A thumbs up denotes something as "good".</p>
-      <p id="meaning spain ok" style="display: none">The "OK" symbol has no particular special connotation.</p>
-      <p id="meaning spain handarm" style="display: none">It is very common to use hand gestures in conversation, and sometimes things are exaggerated.</p>
-      <p id="meaning spain eye" style="display: none">Strong eye contact is normal and recommended during conversations.</p>
+      <p class="meaning spain thumbsup" style="display: none">A thumbs up denotes something as "good".</p>
+      <p class="meaning spain ok" style="display: none">The "OK" symbol has no particular special connotation.</p>
+      <p class="meaning spain handarm" style="display: none">It is very common to use hand gestures in conversation, and sometimes things are exaggerated.</p>
+      <p class="meaning spain eye" style="display: none">Strong eye contact is normal and recommended during conversations.</p>
       <!-- Japan gesture meaning -->
-      <p id="meaning japan thumbsup" style="display: none">Putting your thumb up is used to represent the number "5". It is also known to mean "OK" or "male".</p>
-      <p id="meaning japan ok" style="display: none">Creating a ring with your thumb and index finger makes a symbol that means "money".</p>
-      <p id="meaning japan handarm" style="display: none">People here tend not to make sudden or broad movements or gestures, as it is considered rude.</p>
-      <p id="meaning japan eye" style="display: none">People here get embarrassed by the stare of others. Eye contact is performed only in beginning of a conversation.</p>
+      <p class="meaning japan thumbsup" style="display: none">Putting your thumb up is used to represent the number "5". It is also known to mean "OK" or "male".</p>
+      <p class="meaning japan ok" style="display: none">Creating a ring with your thumb and index finger makes a symbol that means "money".</p>
+      <p class="meaning japan handarm" style="display: none">People here tend not to make sudden or broad movements or gestures, as it is considered rude.</p>
+      <p class="meaning japan eye" style="display: none">People here get embarrassed by the stare of others. Eye contact is performed only in beginning of a conversation.</p>
       <!-- Brazil gesture meaning -->
-      <p id="meaning brazil thumbsup" style="display: none">A thumbs up here means "good" or "positive" and is commonly used everywhere in the country.</p>
-      <p id="meaning brazil ok" style="display: none">The "OK" symbol is highly offensive, and essentially means "screw you". Do not use here.</p>
-      <p id="meaning brazil handarm" style="display: none">Hands and arm movements are used quite often in conversation, so it is acceptable.</p>
-      <p id="meaning brazil eye" style="display: none">Extended eye contact can be seen as a challenge of authority. It is polite to have sporadic or brief eye contact, especially if there is a difference in social registers.</p>
+      <p class="meaning brazil thumbsup" style="display: none">A thumbs up here means "good" or "positive" and is commonly used everywhere in the country.</p>
+      <p class="meaning brazil ok" style="display: none">The "OK" symbol is highly offensive, and essentially means "screw you". Do not use here.</p>
+      <p class="meaning brazil handarm" style="display: none">Hands and arm movements are used quite often in conversation, so it is acceptable.</p>
+      <p class="meaning brazil eye" style="display: none">Extended eye contact can be seen as a challenge of authority. It is polite to have sporadic or brief eye contact, especially if there is a difference in social registers.</p>
     </div>
   </div>
 </div>
@@ -76,5 +81,19 @@
     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
   </footer>
   <script src="script.js"></script>
+
+  <script>
+      $(document).ready(function(){
+        var flag = sessionStorage.getItem("countryselect");
+        var action = sessionStorage.getItem("actionselect");
+        var text = $("." + flag + "." + action).text();
+        $("#meaniningText").html(text);
+        $("#img_action").html("<div class='" + action + "'></div>");
+        $("#country_selected").html(flag);
+        $("#desc_action").html(action);
+      })
+
+  </script>
+
 </body>
 </html>
