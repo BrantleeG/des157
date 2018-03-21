@@ -360,14 +360,14 @@ p {
   }
 }
 
-#table{
+.table {
     display: table;
     width: auto;
     display: inline-block;
     list-style-type: none;
 }
 
-#table li {
+.table li {
     text-align: center;
 }
 
