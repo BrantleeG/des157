@@ -360,14 +360,113 @@ p {
   }
 }
 
-.table {
+#table {
     display: table;
     width: auto;
     display: inline-block;
     list-style-type: none;
 }
 
-.table li {
+#table li {
+    text-align: center;
+}
+
+#table1 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table1 li {
+    text-align: center;
+}
+
+#table2 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table2 li {
+    text-align: center;
+}
+
+#table3 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table3 li {
+    text-align: center;
+}
+
+#table4 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table4 li {
+    text-align: center;
+}
+
+#table5 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table5 li {
+    text-align: center;
+}
+
+#table6 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table6 li {
+    text-align: center;
+}
+
+#table7 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table7 li {
+    text-align: center;
+}
+
+#table8 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table8 li {
+    text-align: center;
+}
+
+#table9 {
+    display: table;
+    width: auto;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#table9 li {
     text-align: center;
 }
 
